@@ -1,4 +1,4 @@
-To build the app do the following:
+Build instructions:
 
 1. Clone using the clone command: 
 
