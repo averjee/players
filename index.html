@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="scss/players.css">
+    </head>
+    <body>
+        
+        <div id="player-container">
+        <select name="players" id="player-select">
+            <option selected="selected">Select a player...</option>
+            <option value="toby">Toby Alderweireld</option>
+            <option value="yaya">Yaya Touré</option>
+            <option value="wayne">Wayne Rooney</option>
+            <option value="per">Per Mertesacker</option>
+            <option value="riyad">Riyad Mahrez</option>
+        </select>
+        </div>
+        
+        <div id="card">
+          <div id="image-container">
+            <img id="image" alt="Avatar">
+            <div id="badge"></div>
+            <div id="stripes"></div>
+          </div>
+          <div id="stats">    
+              <div id="name"></div>
+              <div id="position"></div>    
+              <div id="appearances">
+                <div id="appearances-header">Appearances</div>
+                <div id="appearances-value"></div>
+              </div>
+              <div id="goals">
+                <div id="goals-header">Goals</div>
+                <div id="goals-value"></div>
+              </div>
+              <div id="assists">
+                <div id="assists-header">Assists</div>
+                <div id="assists-value"></div>
+              </div>
+              <div id="gpm">
+                <div id="gpm-header">Goals per match</div>
+                <div id="gpm-value"></div>
+              </div>
+              <div id="ppm">
+                <div id="ppm-header">Passes per minute</div>
+                <div id="ppm-value"></div>
+              </div>
+          </div>
+        </div>
+        
+    <script src="js/players.js" charset="utf-8"></script>
+    
+    </body>
+</html>

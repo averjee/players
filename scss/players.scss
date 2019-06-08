@@ -1,0 +1,130 @@
+
+@mixin scale($property) {
+  -webkit-transform: scale($property);
+  -ms-transform: scale($property);
+  transform: scale($property);
+}
+
+body, div, button {
+    padding:0;
+    margin:0;
+    font-family:"Tahoma", sans-serif;  
+}
+
+#card {
+	background-color: white;
+	width: 269px;
+	height: 498px;
+	margin: 10px auto;
+	overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+#player-container {
+    width: 269px;
+    margin: 10px auto;
+	padding: 5px;
+	overflow: hidden;
+}
+
+#image {
+    float: left;
+    width: 140px;
+    position: relative;
+    z-index: 2;
+}
+
+#badge {
+  position: relative;
+  @include scale(0.7);
+  left: 158px;
+  top: 127px;
+  width: 100px;
+  height: 100px;
+  background: url(../assets/badges_sprite.png) 0 0;
+  z-index: 2;
+  border-radius: 50px;
+  padding: 1px;
+}
+
+#stripes {
+  position: relative;
+  left: 25px;
+  top: -193px;
+  width: 269px;
+  height: 334px;
+  background: url(../assets/stripes.png) 0 0;
+  z-index: 1;
+  @include scale(0.6);
+}
+
+#image-container {
+    position: relative;
+    left: 8px;
+    top: 41px;
+}
+
+#stats {
+    position: relative;
+    top: -217px;
+    height: 300px;
+    background-color: #E1003F;
+}
+
+#name, #position {
+    color: white;
+}
+
+#name {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 19px;
+}
+
+#position {
+    position: relative;
+    top: 36px;
+    left: 11px;
+    font-size: 15px;
+}
+
+#appearances, #goals, #assists, #gpm, #ppm {
+    position: absolute;
+    padding: 10px;
+    background: white;
+    width: 237px;
+    left: 6px;
+}
+
+#appearances-header, #goals-header, #assists-header, #gpm-header, #ppm-header {
+  width: 200px;
+  height:auto;
+  float: left;
+}     
+
+#appearances-value, #goals-value, #assists-value, #gpm-value, #ppm-value {
+  height: auto;
+  float: right;
+  font-weight: bold;
+}
+
+#appearances {
+    top: 62px;
+}
+
+#goals {
+    top: 105px;
+}
+
+#assists {
+    top: 148px;
+}
+
+#gpm {
+    top: 191px;
+}
+
+#ppm {
+    top: 234px;
+}
