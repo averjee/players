@@ -5,11 +5,13 @@ To build the app do the following:
    git clone https://github.com/averjee/players.git
 
 
-2. You will need to host the game on a server to run the game as the game uses Pixi JS which needs a web host to  run.  If you haven't got a server you can create a simple local  server by running the following command within the game directory you just cloned:
+2. Run the following command in the command line to install node-sass, nodemon and browserify:
 
-   npm install http-server -g
-   
-   http-server -c-1
+   npm install node-sass nodemon browserify
 
 
-3. Run the game using the available servers generated e.g. http://127.0.0.1:8080
+3. Finally run the following script to minify css and js files in the build folder:
+
+   npm start
+
+4. Run the game locally via: http://localhost:8000/
