@@ -1,6 +1,6 @@
 Build instructions:
 
-1. Clone using the clone command: 
+1. Clone the repo files locally using the clone command: 
 
    git clone https://github.com/averjee/players.git
 
