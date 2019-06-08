@@ -10,7 +10,7 @@ Build instructions:
    npm install node-sass nodemon browserify
 
 
-3. Finally run the following script to minify css and js files in the build folder:
+3. Finally in the cloned directory, run the following script to minify css and js files within the build folder:
 
    npm start
 
