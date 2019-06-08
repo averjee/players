@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "node-sass --include-path scss scss/players.scss build/css/players.min.css",
-    "build-js": "browserify js/**.js>build/js/players.min.js",
+    "build-css": "node-sass --include-path scss scss/players.scss build/css/players.min.css --output-style compressed",
+    "build-js": "browserify -p tinyify js/**.js>build/js/players.min.js",
     "build": "npm run build-css && npm run build-js",
     "server": "cd build && python -m SimpleHTTPServer 8000",
     "start": "nodemon -e js,scss -x \"npm run build && npm run server\" --ignore build/"
@@ -15,6 +15,7 @@
   "devDependencies": {
     "browserify": "^16.2.3",
     "node-sass": "^4.12.0",
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.1",
+    "tinyify": "^2.5.1"
   }
 }
