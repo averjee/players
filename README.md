@@ -5,7 +5,7 @@ Build instructions:
    git clone https://github.com/averjee/players.git
 
 
-2. In the cloned directory, install install node-sass, nodemon and browserify:
+2. In the cloned directory, install node-sass, nodemon and browserify:
 
    npm install node-sass nodemon browserify
 
