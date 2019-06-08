@@ -14,4 +14,4 @@ Build instructions:
 
    npm start
 
-4. Run the game locally via: http://localhost:8000/
+4. Run locally via: http://localhost:8000/
