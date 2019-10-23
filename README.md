@@ -7,7 +7,7 @@ Build instructions:
 
 2. In the cloned directory, install node-sass, nodemon and browserify, tinyify:
 
-   npm install node-sass nodemon browserify tinyify
+   npm install
 
 
 3. Finally in the cloned directory, run the following script to minify css and js files within the build folder:
